@@ -18,31 +18,37 @@ class _HomeState extends State<Home> {
         body: Column(
           children: [
             SafeArea(
-                top: false,
-                child: Stack(
-                  children: <Widget>[
-                    Container(
-                        height: 400,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("assets/mountain1.jpg"),
-                              fit: BoxFit.fill),
-                          borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(45),
-                              bottomLeft: Radius.circular(45)),
+              top: false,
+              child: Stack(
+                children: <Widget>[
+                  Container(
+                      height: 400,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/mountain1.jpg"),
+                            fit: BoxFit.fill),
+                        borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(45),
+                            bottomLeft: Radius.circular(45)),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Hey $name",
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold),
                         ),
-                        child: Center(
-                          child: Text(
-                            "Hey $name",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 35,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        )),
-                  ],
-                )),
+                      )),
+                ],
+              ),
+            ),
+            Container(
+              height: 250,
+              width: 250,
+              color: Colors.amber,
+            ),
           ],
         ),
       ),
