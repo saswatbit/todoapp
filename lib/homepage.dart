@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   margin: EdgeInsets.only(left: 8, right: 8, top: 25),
-                  height: 75,
+                  height: 100,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.white,
